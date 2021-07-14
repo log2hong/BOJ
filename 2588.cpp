@@ -9,4 +9,4 @@ int main(){
     cout << a * (b / 100) << endl;
     cout << a * b << endl;
     return 0;
-} 
+}
