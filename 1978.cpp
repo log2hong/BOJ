@@ -20,5 +20,7 @@ int main(){
         ans += !arr[temp];
     }
     cout << ans << endl;
+    
+    delete[] arr;
     return 0;
 }
