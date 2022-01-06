@@ -9,7 +9,7 @@ int main(){
         int x, y, ans = 1;
         cin >> x >> y;
 
-        int dist = y - x, curr = 1;
+        unsigned int dist = y - x, curr = 1;
         for(int i = 2; curr < dist; i++){
             curr += i / 2;
             ans++;
