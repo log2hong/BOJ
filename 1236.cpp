@@ -26,5 +26,7 @@ int main(){
     for(int i = 0; i < m; i++) cntCol += !col[i];
 
     cout << max(cntRow, cntCol) << endl;
+    free(row);
+    free(col);
     return 0;
 }
