@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int n;
+    long long int n;
     cin >> n;
     cout << n * 4 << endl;
     return 0;
