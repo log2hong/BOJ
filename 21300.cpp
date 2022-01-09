@@ -2,8 +2,13 @@
 using namespace std;
 
 int main(){
-    int n;
-    cin >> n;
-    cout << n / 100 * 78 << " " << n / 1000 * 956 << endl;
+    int sum = 0;
+    for(int i = 0; i < 6; i++){
+        int n;
+        cin >> n;
+        sum += n;
+    }
+
+    cout << sum * 5 << endl;
     return 0;
 }
