@@ -1,1 +1,1 @@
-print("The world says hello!")
+print(int(input()) % 21)
