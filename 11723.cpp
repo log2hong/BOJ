@@ -21,7 +21,7 @@ int main(){
             cin >> n;
             if(operation == "add") S[n] = true;
             else if(operation == "remove") S[n] = false;
-            else if(operation == "check") cout << S[n] << '\n'';
+            else if(operation == "check") cout << S[n] << '\n';
             else if(operation == "toggle") S[n] ^= 1;
         }
     }
