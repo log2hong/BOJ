@@ -1,6 +1,5 @@
-*.exe
-.vscode/settings.json
-
 *
 !*.*
 !*/
+*.exe
+.vscode/settings.json
