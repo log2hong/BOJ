@@ -1,16 +1,20 @@
 #include <iostream>
 using namespace std;
+ 
+int main() {
+    long long S, sum = 0;
+    int num = 1, cnt = 0;   
+    cin >> S;
 
-int main(){
-    unsigned int n;
-    cin >> n;
-    
-    unsigned int sum = 0, i = 1;
     while(true){
-        sum += i;
-        if(sum > n) break;
-        i++;
+        sum += num;
+        cnt++;
+        if(sum > S){
+            cnt--;
+            break;
+        }
+        num++;
     }
-    cout << i - 1 << endl;
+    cout << cnt << endl;
     return 0;
 }
