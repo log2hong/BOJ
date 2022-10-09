@@ -2,14 +2,17 @@
 using namespace std;
 
 int main(){
-    int n, d = 1, num = 1;
-    cin >> n;
-
-    while(true){
-        if(num % n == 0) break;
-        d++;
-        num = (num * 10 + 1) % n;
+    long long n, num, d;
+    while(cin >> n){
+        num = 1;
+        d = 1;
+        while(true){
+            num %= n;
+            if(num == 0) break;
+            num = (num * 10 + 1) % n;
+            d++;
+        }
+        cout << d << endl;
     }
-    cout << d << endl;
     return 0;
 }
