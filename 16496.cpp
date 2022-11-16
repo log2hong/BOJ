@@ -28,4 +28,6 @@ int main() {
 
     if (v[0] == "0") cout << "0" << endl;
     else cout << ans << endl;
+
+    return 0;
 }
