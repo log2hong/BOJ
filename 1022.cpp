@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-const int dy[4] = { -1, 0, 1, 0 };
 const int dx[4] = { 0, -1, 0, 1 };
+const int dy[4] = { -1, 0, 1, 0 };
 
 int main(){
 	int r1, c1, r2, c2;
@@ -27,10 +27,9 @@ int main(){
 		x = x + dx[dir]; y = y + dy[dir];
 
 		if (cnt == temp) {
-			cnt = 0;
 			dir = (dir + 1) % 4;
-			if (dir == 1 || dir == 3)
-				temp++;
+			if (dir == 1 || dir == 3) temp++;
+			cnt = 0;
 		}
 	}
 
