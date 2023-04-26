@@ -12,20 +12,20 @@ int main(){
     int n;
     cin >> n;
 
+    string name, query;
     for(int i = 0; i < n; i++){
-        string name, query;
         cin >> name >> query;
         if(query == "enter"){
             s.insert(name);
         }
-        else{
+        else if(query == "leave"){
             s.erase(name);
         }
     }
     auto iter = s.end();
     while(true){
         iter--;
-        cout << *iter << endl;
+        cout << *iter << '\n';
         if(iter == s.begin()) break;
     }
     return 0;
