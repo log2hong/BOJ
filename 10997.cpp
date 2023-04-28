@@ -22,7 +22,7 @@ void draw(int n, int x, int y){
     draw(n - 1, x, y - 1);
 }
  
-int main(void){
+int main(){
     int n;
     cin >> n;
  
