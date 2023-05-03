@@ -24,6 +24,8 @@ void merge(int* arr, int p, int q, int r, int k){
         if(++cnt == k)
             cout << tmp[t - 1] << endl;
     }
+
+    delete[] tmp;
 }
 
 void merge_sort(int* arr, int start, int end, int k){
@@ -41,12 +43,13 @@ int main(){
     cin >> n >> k;
 
     int* arr = new int[n];
-    for(int i=0; i < n; i++)
+    for(int i = 0; i < n; i++)
         cin >> arr[i];
     merge_sort(arr, 0, n - 1, k);
 
     if(cnt < k)
         cout << -1 << endl;
 
+    delete[] arr;
     return 0;
 }
