@@ -7,7 +7,7 @@ dict = {}
 for _ in range(n - 1):
     s = str(input())
     if s == "ENTER":
-        for key, value in dict.items():
+        for _, value in dict.items():
             if value == 1:  
                 cnt += 1 
         dict = {} 
