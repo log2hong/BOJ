@@ -45,6 +45,9 @@ int main(){
         cout << ans[i] << ' ';
     }
 
-    delete[] arr, lis, index, ans;
+    delete[] arr;
+    delete[] lis;
+    delete[] index;
+    delete[] ans;
     return 0;
 }
